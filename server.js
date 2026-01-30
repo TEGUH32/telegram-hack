@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 3000;
 const CONFIG = {
     // Telegram Bot Configuration
     BOT_TOKEN: '8550434238:AAECMid6pXeBoLCdySDfd_2hXkWEMBfjI8s', // Ganti dengan bot tokenmu
-    CHAT_ID: 'YOUR_CHAT_ID_HERE',     // Ganti dengan chat IDmu
+    CHAT_ID: '6834832649',     // Ganti dengan chat IDmu
     
     // Admin credentials
     ADMIN_USERNAME: 'admin',
